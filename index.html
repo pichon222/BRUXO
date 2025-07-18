@@ -4,14 +4,92 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BRUXO - Ropa deportiva</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    .container {
+      padding: 2em;
+      text-align: center;
+    }
+    .grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 2em;
+    }
+    .card {
+      background: white;
+      width: 250px;
+      padding: 1em;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin-top: 1em;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 0.5em 1em;
+      background-color: #111;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4em;
+      padding: 1em;
+      background-color: #111;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenido a BRUXO</h1>
-  <p>Elige una categoría:</p>
-  <ul>
-    <li><a href="camisetas.html">Camisetas de fútbol</a></li>
-    <li><a href="zapatillas.html">Zapatillas</a></li>
-    <li><a href="gorras.html">Gorras</a></li>
-  </ul>
+  <header>
+    <h1>BRUXO</h1>
+    <p>Tu tienda de camisetas, zapatillas y gorras</p>
+  </header>
+
+  <div class="container">
+    <h2>Explora nuestras categorías</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/250x250?text=Camisetas" alt="Camisetas de fútbol">
+        <h3>Camisetas de fútbol</h3>
+        <a href="camisetas.html" class="button">Ver más</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/250x250?text=Zapatillas" alt="Zapatillas">
+        <h3>Zapatillas</h3>
+        <a href="zapatillas.html" class="button">Ver más</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/250x250?text=Gorras" alt="Gorras">
+        <h3>Gorras</h3>
+        <a href="gorras.html" class="button">Ver más</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 BRUXO. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
